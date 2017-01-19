@@ -13,7 +13,7 @@ contains
     ! ======================================================
     ! subroutine to initialize the wavefield
     ! ======================================================
-    subroutine init_sub(this)
+    subroutine init_sub(this) ! {
         implicit none
         class (wavefield_class) :: this
         integer :: istat
@@ -31,4 +31,5 @@ contains
         this%dp_allocated = .true.
         this%dp = cmplx(0.0,0.0)
     end subroutine
+    ! }
 end module
